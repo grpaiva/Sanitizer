@@ -75,7 +75,7 @@ The following filters are available out of the box:
  **lowercase**    | Converts the given string to all lowercase
  **uppercase**    | Converts the given string to all uppercase
  **capitalize**    | Capitalize a string
- **cast**           | Casts a variable into the given type. Options are: integer, float, string, boolean, object, array and Laravel Collection.
+ **cast**           | Casts a variable into the given type. Options are: integer, float, string, boolean, object, array, Laravel Collection and a Carbon Instance.
  **format_date**    | Always takes two arguments, the date's given format and the target format, following DateTime notation.
  **strip_tags**    | Strip HTML and PHP tags using php's strip_tags
  **digit**    | Get only digit characters from the string
