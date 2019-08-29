@@ -41,7 +41,6 @@ class Cast implements Filter
                 if (isset($options[1])) {
                     return Carbon::createFromFormat($options[1], $value);
                 }
-                var_dump(Carbon::parse($value));
 
                 return Carbon::parse($value);
             default:
