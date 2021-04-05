@@ -42,7 +42,7 @@ class Sanitizer
      *
      *  @param  array   $data
      *  @param  array   $rules      Rules to be applied to each data attribute
-     *  @param  array   $filters    Available filters for this sanitizer
+     *  @param  array   $customFilters    Available filters for this sanitizer
      *  @return Sanitizer
      */
     public function __construct(array $data, array $rules, array $customFilters = [])
@@ -99,8 +99,10 @@ class Sanitizer
 
     /**
      *  Apply the given filter by its name
-     *  @param  $name
-     *  @return Filter
+     * @param  $name
+     * @param $value
+     * @param array $options
+     * @return Filter
      */
     protected function applyFilter($name, $value, $options = [])
     {

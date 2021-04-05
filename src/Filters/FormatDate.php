@@ -11,8 +11,9 @@ class FormatDate implements Filter
     /**
      *  Lowercase the given string.
      *
-     *  @param  string  $value
-     *  @return string
+     * @param string $value
+     * @param array $options
+     * @return string
      */
     public function apply($value, $options = [])
     {
@@ -24,6 +25,7 @@ class FormatDate implements Filter
         }
         $currentFormat = trim($options[0]);
         $targetFormat  = trim($options[1]);
+
         return Carbon::createFromFormat($currentFormat, $value)->format($targetFormat);
     }
 }

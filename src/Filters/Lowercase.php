@@ -9,8 +9,9 @@ class Lowercase implements Filter
     /**
      *  Lowercase the given string.
      *
-     *  @param  string  $value
-     *  @return string
+     * @param string $value
+     * @param array $options
+     * @return string
      */
     public function apply($value, $options = [])
     {
